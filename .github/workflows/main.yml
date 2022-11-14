@@ -62,7 +62,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v2.0.8
         with:
-          name: ${{ matrix.channel }}
+          name: build-WebGL
           path: build/WebGL
       - uses: KikimoraGames/itch-publish@v0.0.3
         with:
