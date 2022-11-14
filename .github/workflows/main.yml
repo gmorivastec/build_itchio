@@ -51,6 +51,7 @@ jobs:
           name: build-WebGL
           path: build/webgl
   deploy:
+    needs: buildWebGL
     name: Upload to Itch
     runs-on: ubuntu-latest
     strategy:
